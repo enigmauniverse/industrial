@@ -59,3 +59,7 @@ Grid styles
 /*=================================
 Decor&Typography styles
 =================================*/
+.page-header__logo {
+  width: 294px;
+  height: 71px;
+}
