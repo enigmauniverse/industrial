@@ -2,18 +2,48 @@
 /*=================================
 Fonts
 =================================*/
+@font-face {
+  font-family: "HK Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/HKGrotesk-Light.woff2") format("woff2"),
+    url("../fonts/HKGrotesk-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/leaguespartan-bold.woff2") format("woff2"),
+    url("../fonts/leaguespartan-bold.woff") format("woff");
+}
 
 /*=================================
 Base styles
 =================================*/
+body {
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #212c44;
+}
+
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 1160px;
+.page-container {
+  width: 1360px;
   margin: 0 auto;
 }
+
+.page-container--padded {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 /*=================================
 Special classes
 =================================*/
@@ -30,8 +60,12 @@ Special classes
   overflow: hidden;
 }
 
-.ol-block {
+.ol-block--1 {
   outline: 2px solid tomato;
+}
+
+.ol-block--2 {
+  outline: 2px solid green;
 }
 
 .bg-block {
@@ -60,11 +94,12 @@ Decor&Typography styles
 /*
 для стилизации svg встроенного тегом object:
 - встроить путь до стилевого файла в файл svg
-    <?xml-stylesheet type="text/css" href="../path/to/your.css"?>;
+(перед тегом <svg>)
+  <?xml-stylesheet type="text/css" href="../path/to/your.css"?>;
 - добавить в элемент "svg" и "path" svg-файла, классы
-<svg class="logo-svg" ...>
-<path class="logo-svg__path".../>
-- стилизовать svg по классу в файле указаном выше
+  <svg class="logo-svg" ...>
+  <path class="logo-svg__path".../>
+- стилизовать svg по классам в файле указаном выше
 */
 
 .page-header__logo {
@@ -77,7 +112,7 @@ Decor&Typography styles
 }
 
 .logo-svg:hover .logo-svg__path {
-  fill: green;
+  fill: #696969;
 }
 
 .header-logo--fallback {
