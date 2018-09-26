@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*=================================
 Fonts
 =================================*/
@@ -59,7 +60,31 @@ Grid styles
 /*=================================
 Decor&Typography styles
 =================================*/
+/*
+для стилизации svg встроенного тегом object:
+- встроить путь до стилевого файла в файл svg
+    <?xml-stylesheet type="text/css" href="../path/to/your.css"?>;
+- добавить в элемент "svg" и "path" svg-файла, классы
+<svg class="logo-svg" ...>
+<path class="logo-svg__path".../>
+- стилизовать svg по классу в файле указаном выше
+*/
+
 .page-header__logo {
   width: 294px;
   height: 71px;
+}
+
+.logo-svg__path {
+  fill: #9aa5a9;
+}
+
+.logo-svg:hover .logo-svg__path {
+  fill: green;
+}
+
+.header-logo--fallback {
+  width: 294px;
+  height: 71px;
+  background-image: url("../img/logo.png");
 }

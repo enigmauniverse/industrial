@@ -13,7 +13,9 @@
       </h1>
 
       <object class="page-header__logo header-logo" data="img/logo.svg" type="image/svg+xml">
-        <img class="header-logo--no-svg" src="img/logo.png" width="294" height="71" alt="logo without svg-support">
+        <div class="header-logo--fallback">
+          <span class="visually-hidden">Ваш браузер не поддерживает svg</span>
+        </div>
       </object>
 
       <input class="page-header__search" type="search">
