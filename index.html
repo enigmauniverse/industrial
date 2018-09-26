@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <header class="page-header">
-      <h1 class="page-header__title visually-hidden">
-        Industrial Design
-      </h1>
+    <div class="container ol-block">
+      <header class="page-header">
+        <h1 class="page-header__title visually-hidden">
+          Industrial Design
+        </h1>
 
-      <object class="page-header__logo header-logo" data="img/logo.svg" type="image/svg+xml">
-        <div class="header-logo--fallback">
-          <span class="visually-hidden">Ваш браузер не поддерживает svg</span>
-        </div>
-      </object>
+        <object class="page-header__logo header-logo" data="img/logo.svg" type="image/svg+xml">
+          <div class="header-logo--fallback">
+            <span class="visually-hidden">Your browser does not support svg</span>
+          </div>
+        </object>
 
-      <input class="page-header__search" type="search">
-    </header>
-    <main class="main-content">
-      <section class="hit"></section>
-      <section class="buy"></section>
-      <section class="details"></section>
-    </main>
-    <footer class="page-footer"></footer>
+        <input class="page-header__search" type="search">
+      </header>
+
+      <main class="content">
+        <section class="content__hit">
+          <h2 class="content__title visually-hidden">Bestsellers</h2>
+        </section>
+
+        <section class="content__buy">
+          <h2 class="content__title visually-hidden">Main goods</h2>
+        </section>
+
+        <section class="content_details">
+          <h2 class="content__title visually-hidden">More goods</h2>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <section class="page-footer__subscribe"></section>
+        <section class="page-footer__site-map"></section>
+        <section class="page-footer__copyright"></section>
+      </footer>
+    </div>
   </body>
 </html>
