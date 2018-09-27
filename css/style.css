@@ -35,13 +35,8 @@ a {
 }
 
 .page-container {
-  width: 1360px;
+  width: 1160px;
   margin: 0 auto;
-}
-
-.page-container--padded {
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 /*=================================
