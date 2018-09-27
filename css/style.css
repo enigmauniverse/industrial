@@ -39,6 +39,23 @@ a {
   margin: 0 auto;
 }
 
+.page-content__list,
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #92a1a9;
+}
+/* Стилизовать состояния hover, active, focus, visited */
+
 /*=================================
 Special classes
 =================================*/
@@ -147,5 +164,14 @@ Decor&Typography styles
 
 /* footer styles */
 .page-footer {
+  color: #92a1a9;
   background-color: transparent;
+}
+
+.page-footer__text {
+  color: #7f919b;
+}
+
+.navigation__link {
+  color: #92a1a9;
 }
