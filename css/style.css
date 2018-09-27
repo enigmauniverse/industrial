@@ -1,4 +1,18 @@
+/*
+для стилизации svg встроенного тегом object:
+- встроить путь до стилевого файла в файл svg
+(перед тегом <svg>)
+  <?xml-stylesheet type="text/css" href="../path/to/your.css"?>;
+- добавить в элемент "svg" и "path" svg-файла, классы
+  <svg class="logo-svg" ...>
+  <path class="logo-svg__path".../>
+- стилизовать svg по классам в файле указаном выше
+*/
+/*
+  Стилизовать состояния hover, active, focus, visited
+*/
 @charset "UTF-8";
+
 /*=================================
 Fonts
 =================================*/
@@ -54,7 +68,6 @@ a {
 .btn:hover {
   color: #92a1a9;
 }
-/* Стилизовать состояния hover, active, focus, visited */
 
 /*=================================
 Special classes
@@ -107,17 +120,6 @@ Grid styles
 /*=================================
 Decor&Typography styles
 =================================*/
-/*
-для стилизации svg встроенного тегом object:
-- встроить путь до стилевого файла в файл svg
-(перед тегом <svg>)
-  <?xml-stylesheet type="text/css" href="../path/to/your.css"?>;
-- добавить в элемент "svg" и "path" svg-файла, классы
-  <svg class="logo-svg" ...>
-  <path class="logo-svg__path".../>
-- стилизовать svg по классам в файле указаном выше
-*/
-
 /* header styles */
 .page-header {
   background-color: transparent;
