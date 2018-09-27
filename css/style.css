@@ -1,16 +1,3 @@
-/*
-для стилизации svg встроенного тегом object:
-- встроить путь до стилевого файла в файл svg
-(перед тегом <svg>)
-  <?xml-stylesheet type="text/css" href="../path/to/your.css"?>;
-- добавить в элемент "svg" и "path" svg-файла, классы
-  <svg class="logo-svg" ...>
-  <path class="logo-svg__path".../>
-- стилизовать svg по классам в файле указаном выше
-*/
-/*
-  Стилизовать состояния hover, active, focus, visited
-*/
 @charset "UTF-8";
 
 /*=================================
