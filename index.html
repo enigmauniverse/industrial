@@ -19,7 +19,10 @@
           </div>
         </object>
 
-        <input class="page-header__search" type="search">
+        <form class="page-header__search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="page-header__search-field" id="search-field-id" type="search" name="search-request" placeholder="Search">
+          <button class="page-header__search-btn" type="search"><span class="visually-hidden">Search button</span></button>
+        </form>
       </header>
 
       <main class="page-content ol-block--1">
@@ -35,7 +38,7 @@
         <section class="page-content__main ol-block--3">
           <h2 class="page-content__title visually-hidden">Main goods</h2>
           <ul class="page-content__list">
-            <li class="page-content__item main-item">
+            <li class="page-content__item-1 main-item">
               <h3 class="main-item__head">BEOPLAY A1</h3>
               <p class="main-item__text">
                 The ultra-portable Bluetooth speaker that will travel
@@ -43,7 +46,7 @@
               </p>
               <a href="#" class="btn main-item__btn">Buy</a>
             </li>
-            <li class="page-content__item main-item">
+            <li class="page-content__item-2 main-item">
               <h3 class="main-item__head">Leica MP</h3>
               <p class="main-item__text">
                 Focused technology for focused photography
@@ -56,19 +59,19 @@
         <section class="page-content__back ol-block--3">
           <h2 class="page-content__title visually-hidden">More goods</h2>
           <ul class="page-content__list">
-            <li class="page-content__item back-item">
+            <li class="page-content__item-3 back-item">
               <p class="back-item__text">
                 The world’s first molecular air purifier.
               </p>
               <h3 class="back-item__head">Molekule</h3>
               <a href="#" class="btn back-item__btn">Details</a>
             </li>
-            <li class="page-content__item back-item">
+            <li class="page-content__item-4 back-item">
               <p class="back-item__text">Bowers &#38; Wilkins</p>
               <h3 class="back-item__head">P9 Signature</h3>
               <a href="#" class="btn back-item__btn">Details</a>
             </li>
-            <li class="page-content__item back-item">
+            <li class="page-content__item-5 back-item">
               <p class="back-item__text">An homage to Dieter Rams</p>
               <h3 class="back-item__head">DR-II</h3>
               <a href="#" class="btn back-item__btn">Details</a>
@@ -91,6 +94,7 @@
             <input class="form-subscribe__submit" type="submit" value="Subscribe">
           </form>
         </section>
+
         <section class="page-footer__site-map">
           <h2 class="visually-hidden">Site navigation</h2>
           <nav class="page-footer__navigation navigation">
@@ -113,6 +117,7 @@
             </ul>
           </nav>
         </section>
+
         <section class="page-footer__copyright">
           <h2 class="visually-hidden">Site copyright</h2>
           <span class="page-footer__text">&#169; Industrial Design Magazine</span>

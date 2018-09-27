@@ -133,13 +133,49 @@ Decor&Typography styles
 }
 
 .logo-svg:hover .logo-svg__path {
-  fill: #696969;
+  fill: tomato;
 }
 
 .header-logo--fallback {
   width: 294px;
   height: 71px;
   background-image: url("../img/logo.png");
+}
+
+.page-header__search-form {
+  position: relative;
+  box-sizing: border-box;
+  width: 176px;
+}
+
+.page-header__search-field {
+  width: 100%;
+  padding: 0;
+  padding-left: 31px;
+  color: #92a1a9;
+  border: 0;
+  border-bottom: 3px solid #63757e;
+  background-color: transparent;
+}
+
+.page-header__search-field::placeholder {
+  color: #92a1a9;
+}
+
+.page-header__search-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 21px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background-image: url("../img/search_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 21px 22px;
+  background-color: transparent;
 }
 
 /* content styles */
@@ -156,10 +192,58 @@ Decor&Typography styles
   position: absolute;
   top: 0;
   right: 0;
+  display: block;
   width: 112px;
   height: 115px;
   background-image: url("../img/promo_sticker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-size: 112px 115px;
+}
+
+.main-item {
+  width: 560px;
+  min-height: 520px;
+}
+
+.page-content__item-1 {
+  background-image: url("../img/beoplay_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 560px 520px;
+}
+
+.page-content__item-2 {
+  background-image: url("../img/leica_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 560px 520px;
+}
+
+.back-item {
+  width: 360px;
+  min-height: 440px;
+}
+
+.page-content__item-3 {
+  background-image: url("../img/molecule_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 360px 440px;
+}
+
+.page-content__item-4 {
+  background-image: url("../img/signature_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 360px 440px;
+}
+
+.page-content__item-5 {
+  background-image: url("../img/dr2_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 360px 440px;
 }
 
 /* footer styles */
