@@ -63,6 +63,10 @@ Special classes
   outline: 2px solid green;
 }
 
+.ol-block--3 {
+  outline: 2px solid darkmagenta;
+}
+
 .bg-block {
   background-color: rgba(255, 99, 71, 0.4);
 }
@@ -97,6 +101,11 @@ Decor&Typography styles
 - стилизовать svg по классам в файле указаном выше
 */
 
+/* header styles */
+.page-header {
+  background-color: transparent;
+}
+
 .page-header__logo {
   width: 294px;
   height: 71px;
@@ -114,4 +123,29 @@ Decor&Typography styles
   width: 294px;
   height: 71px;
   background-image: url("../img/logo.png");
+}
+
+/* content styles */
+.page-content {
+  background-color: transparent;
+}
+
+.goods-promo {
+  position: relative;
+}
+
+.goods-promo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 112px;
+  height: 115px;
+  background-image: url("../img/promo_sticker.png");
+  background-size: 112px 115px;
+}
+
+/* footer styles */
+.page-footer {
+  background-color: transparent;
 }
