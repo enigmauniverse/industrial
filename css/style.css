@@ -22,6 +22,10 @@ Fonts
 /*=================================
 Base styles
 =================================*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 18px;
@@ -49,11 +53,23 @@ a {
 
 .btn {
   color: #ffffff;
+  font-family: "League Spartan", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 
 .btn:hover {
-  color: #92a1a9;
+  color: tomato;
+}
+
+.goods-promo__btn {
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 /*=================================
@@ -125,7 +141,7 @@ Decor&Typography styles
   fill: tomato;
 }
 
-.header-logo--fallback {
+.page-header__logo-fallback {
   width: 294px;
   height: 71px;
   background-image: url("../img/logo.png");
@@ -133,7 +149,6 @@ Decor&Typography styles
 
 .page-header__search-form {
   position: relative;
-  box-sizing: border-box;
   width: 176px;
 }
 
@@ -141,13 +156,18 @@ Decor&Typography styles
   width: 100%;
   padding: 0;
   padding-left: 31px;
-  color: #92a1a9;
   border: 0;
+  color: #92a1a9;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
   border-bottom: 3px solid #63757e;
   background-color: transparent;
 }
 
-.page-header__search-field::placeholder {
+.page-header__search-field::placeholder,
+.form-subscribe__email::placeholder {
   color: #92a1a9;
 }
 
@@ -172,8 +192,19 @@ Decor&Typography styles
   background-color: transparent;
 }
 
+.page-content__promo {
+  width: 100%;
+  min-height: 690px;
+  padding: 60px;
+}
+
 .goods-promo {
   position: relative;
+  color: #ffffff;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.45;
 }
 
 .goods-promo::before {
@@ -190,9 +221,27 @@ Decor&Typography styles
   background-size: 112px 115px;
 }
 
+.goods-promo__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 1160px;
+  height: 690px;
+  z-index: -1;
+}
+
+.page-content__main {
+  color: #ffffff;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
 .main-item {
   width: 560px;
   min-height: 520px;
+  padding: 30px;
 }
 
 .page-content__item-1 {
@@ -209,9 +258,18 @@ Decor&Typography styles
   background-size: 560px 520px;
 }
 
+.page-content__back {
+  color: #ffffff;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+}
+
 .back-item {
   width: 360px;
   min-height: 440px;
+  padding: 35px;
 }
 
 .page-content__item-3 {
@@ -235,16 +293,72 @@ Decor&Typography styles
   background-size: 360px 440px;
 }
 
+.goods-promo__head,
+.main-item__head,
+.back-item__head {
+  font-family: "League Spartan", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.goods-promo__head {
+  font-size: 80px;
+}
+
+.main-item__head {
+  font-size: 48px;
+}
+
+.back-item__head {
+  font-size: 36px;
+}
+
 /* footer styles */
 .page-footer {
   color: #92a1a9;
   background-color: transparent;
 }
 
+.page-footer__title {
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+
 .page-footer__text {
   color: #7f919b;
 }
 
+.form-subscribe__email {
+  padding: 0;
+  color: #92a1a9;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  background-color: transparent;
+  border: 3px solid #63757e;
+}
+
+.form-subscribe__submit {
+  padding: 5px;
+  color: #ffffff;
+  font-family: "League Spartan", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid #82c9d8;
+}
+
 .navigation__link {
   color: #92a1a9;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.page-footer__copyright-text {
+  color: #7f919b;
 }
