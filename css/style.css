@@ -20,7 +20,7 @@ Fonts
 }
 
 /*=================================
-Base styles
+Primary styles
 =================================*/
 * {
   box-sizing: border-box;
@@ -52,12 +52,17 @@ a {
 }
 
 .btn {
+  display: block;
+  max-width: 120px;
+  padding: 15px 15px 10px;
+  text-align: center;
   color: #ffffff;
   font-family: "League Spartan", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.8px;
+  border: 3px solid #eec9a2;
 }
 
 .btn:hover {
@@ -65,6 +70,8 @@ a {
 }
 
 .goods-promo__btn {
+  max-width: 160px;
+  padding: 12px 15px 12px;
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -115,16 +122,21 @@ Special classes
 /*=================================
 Animation styles
 =================================*/
+.page-content__list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*=================================
 Grid styles
 =================================*/
 
 /*=================================
-Decor&Typography styles
+Main styles
 =================================*/
 /* header styles */
 .page-header {
+  min-height: 188px;
   background-color: transparent;
 }
 
@@ -195,6 +207,7 @@ Decor&Typography styles
 .page-content__promo {
   width: 100%;
   min-height: 690px;
+  margin-bottom: 40px;
   padding: 60px;
 }
 
@@ -234,6 +247,7 @@ Decor&Typography styles
 }
 
 .page-content__main {
+  margin-bottom: 40px;
   color: #ffffff;
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 24px;
@@ -349,7 +363,9 @@ Decor&Typography styles
 }
 
 .form-subscribe__submit {
-  padding: 5px;
+  display: block;
+  width: 360px;
+  padding: 20px 15px 15px;
   color: #ffffff;
   font-family: "League Spartan", "Arial", sans-serif;
   font-size: 18px;
