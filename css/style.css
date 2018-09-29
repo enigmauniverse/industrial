@@ -128,7 +128,8 @@ Grid styles
 =================================*/
 .page-content__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /*=================================
