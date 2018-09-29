@@ -122,14 +122,14 @@ Special classes
 /*=================================
 Animation styles
 =================================*/
-.page-content__list {
-  display: flex;
-  justify-content: space-between;
-}
 
 /*=================================
 Grid styles
 =================================*/
+.page-content__list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*=================================
 Main styles
