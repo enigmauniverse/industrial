@@ -28,7 +28,7 @@ Primary styles
 
 body {
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.2;
   font-weight: 300;
   color: #ffffff;
@@ -58,7 +58,6 @@ a {
   text-align: center;
   color: #ffffff;
   font-family: "League Spartan", "Arial", sans-serif;
-  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.8px;
@@ -73,7 +72,7 @@ a {
   max-width: 160px;
   padding: 12px 15px 12px;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 0.75em;
   font-weight: 300;
   text-transform: none;
   letter-spacing: normal;
@@ -120,23 +119,14 @@ Special classes
 }
 
 /*=================================
-Animation styles
-=================================*/
-
-/*=================================
-Grid styles
-=================================*/
-.page-content__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/*=================================
 Main styles
 =================================*/
 /* header styles */
 .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   min-height: 188px;
   background-color: transparent;
 }
@@ -172,7 +162,7 @@ Main styles
   border: 0;
   color: #92a1a9;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 1.333333333333333em;
   font-weight: 300;
   line-height: 1.2;
   border-bottom: 3px solid #63757e;
@@ -209,16 +199,17 @@ Main styles
   width: 100%;
   min-height: 690px;
   margin-bottom: 40px;
-  padding: 60px;
+  padding: 1.875em;
 }
 
 .goods-promo {
   position: relative;
   color: #ffffff;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.45;
+  background-image: url("../img/gina_product.jpg");
   background-color: #8d979d;
   z-index: 1;
 }
@@ -247,11 +238,17 @@ Main styles
   z-index: -1;
 }
 
+.page-content__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .page-content__main {
   margin-bottom: 40px;
   color: #ffffff;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -259,6 +256,10 @@ Main styles
   width: 560px;
   min-height: 520px;
   padding: 30px;
+}
+
+.main-item__btn {
+  font-size: 0.75em;
 }
 
 .page-content__item-1 {
@@ -280,7 +281,7 @@ Main styles
 .page-content__back {
   color: #ffffff;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1;
 }
@@ -289,6 +290,10 @@ Main styles
   width: 360px;
   min-height: 440px;
   padding: 35px;
+}
+
+.back-item__btn {
+  font-size: 1.125em;
 }
 
 .page-content__item-3 {
@@ -325,26 +330,27 @@ Main styles
 }
 
 .goods-promo__head {
-  font-size: 80px;
+  font-size: 2.5em;
 }
 
 .main-item__head {
-  font-size: 48px;
+  font-size: 2em;
 }
 
 .back-item__head {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
 /* footer styles */
 .page-footer {
+  padding: 1.666666666666667em;
   color: #92a1a9;
   background-color: transparent;
 }
 
 .page-footer__title {
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -356,7 +362,7 @@ Main styles
   padding: 0;
   color: #92a1a9;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 1.333333333333333em;
   font-weight: 300;
   line-height: 1.2;
   background-color: #272f45;
@@ -369,7 +375,7 @@ Main styles
   padding: 20px 15px 15px;
   color: #ffffff;
   font-family: "League Spartan", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 1.333333333333333em;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -380,10 +386,46 @@ Main styles
 .navigation__link {
   color: #92a1a9;
   font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 1.333333333333333em;
   font-weight: 300;
 }
 
 .page-footer__copyright-text {
   color: #7f919b;
+}
+
+@media (max-width: 72.8125em) {
+  .page-header {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .goods-promo {
+    margin: 0;
+  }
+
+  .page-content__main {
+    margin: 0;
+  }
+
+  .page-content__list {
+    justify-content: center;
+  }
+
+  .main-item,
+  .back-item {
+    width: 100%;
+  }
+
+  .form-subscribe__submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .page-header {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
