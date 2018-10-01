@@ -343,9 +343,18 @@ Main styles
 
 /* footer styles */
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1.666666666666667em;
   color: #92a1a9;
   background-color: transparent;
+}
+
+.page-footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-footer__title {
@@ -381,6 +390,10 @@ Main styles
   text-transform: uppercase;
   background-color: #272f45;
   border: 3px solid #82c9d8;
+}
+
+.navigation__list {
+  display: flex;
 }
 
 .navigation__link {
