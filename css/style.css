@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/*
+Описание состояний интерактивных элементов
+hover
+active
+focus
+visited
+disable
+...
+ */
+
 /*=================================
 Fonts
 =================================*/
@@ -368,7 +378,9 @@ Main styles
 }
 
 .form-subscribe__email {
-  padding: 0;
+  width: 360px;
+  padding: 20px 15px 15px;
+  text-align: center;
   color: #92a1a9;
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 1.333333333333333em;
@@ -407,31 +419,23 @@ Main styles
   color: #7f919b;
 }
 
-@media (max-width: 72.8125em) {
+@media (max-width: 70em) {
   .page-header {
     justify-content: space-around;
     align-items: center;
   }
 
-  .goods-promo {
-    margin: 0;
-  }
-
+  .page-content__promo,
   .page-content__main {
     margin: 0;
   }
 
-  .page-content__list {
-    justify-content: center;
+  .main-item {
+    flex-grow: 1;
   }
 
-  .main-item,
   .back-item {
-    width: 100%;
-  }
-
-  .form-subscribe__submit {
-    width: 100%;
+    flex-grow: 1;
   }
 }
 
@@ -442,3 +446,5 @@ Main styles
     align-items: center;
   }
 }
+
+
