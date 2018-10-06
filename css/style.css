@@ -138,6 +138,7 @@ Main styles
   align-items: center;
   width: 100%;
   min-height: 188px;
+  padding-top: 10px;
   background-color: transparent;
 }
 
