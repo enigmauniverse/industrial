@@ -78,16 +78,6 @@ a {
   color: tomato;
 }
 
-.goods-promo__btn {
-  max-width: 160px;
-  padding: 12px 15px 12px;
-  font-family: "HK Grotesk", "Arial", sans-serif;
-  font-size: 0.75em;
-  font-weight: 300;
-  text-transform: none;
-  letter-spacing: normal;
-}
-
 /*=================================
 Special classes
 =================================*/
@@ -239,14 +229,27 @@ Main styles
   background-size: 112px 115px;
 }
 
-.goods-promo__image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  max-width: 100%;
-  height: auto;
-  z-index: -1;
+.goods-promo_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 365px;
+  min-height: 465px;
+  padding-top: 50px;
+}
+
+.goods-promo__head,
+.goods-promo__text {
+  margin: 0;
+}
+
+.goods-promo__btn {
+  max-width: 160px;
+  padding: 12px 15px 12px;
+  font-family: "HK Grotesk", "Arial", sans-serif;
+  font-size: 0.75em;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .page-content__list {
