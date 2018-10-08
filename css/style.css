@@ -317,6 +317,7 @@ Main styles
 }
 
 .page-content__back {
+  margin-bottom: 90px;
   color: #ffffff;
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 1rem;
@@ -325,9 +326,28 @@ Main styles
 }
 
 .back-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 360px;
   min-height: 440px;
   padding: 35px;
+}
+
+.back-item__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 30px;
+}
+
+.back-item__head {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 2.25em;
+}
+
+.back-item__text--second {
+  margin-top: auto;
 }
 
 .back-item__btn {
@@ -374,15 +394,12 @@ Main styles
   font-size: 2em;
 }
 
-.back-item__head {
-  font-size: 2.25em;
-}
-
 /* footer styles */
 .page-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 440px;
   padding: 1.666666666666667em;
   color: #92a1a9;
   background-color: transparent;
@@ -392,21 +409,29 @@ Main styles
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 85px;
 }
 
 .page-footer__title {
+  margin: 0;
+  padding-top: 30px;
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 2em;
   font-weight: 300;
+  text-align: center;
 }
 
 .page-footer__text {
+  width: 75%;
+  margin-bottom: 50px;
+  text-align: center;
   color: #7f919b;
 }
 
 .form-subscribe__email {
   width: 360px;
-  padding: 20px 15px 15px;
+  margin-bottom: 20px;
+  padding: 15px 15px 15px;
   text-align: center;
   color: #92a1a9;
   font-family: "HK Grotesk", "Arial", sans-serif;
@@ -423,16 +448,23 @@ Main styles
   padding: 20px 15px 15px;
   color: #ffffff;
   font-family: "League Spartan", "Arial", sans-serif;
-  font-size: 1.333333333333333em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 400;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   background-color: #272f45;
   border: 3px solid #82c9d8;
 }
 
+.page-footer__site-map {
+  width: 550px;
+  margin-bottom: 30px;
+}
+
 .navigation__list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .navigation__link {
@@ -440,6 +472,15 @@ Main styles
   font-family: "HK Grotesk", "Arial", sans-serif;
   font-size: 1.333333333333333em;
   font-weight: 300;
+}
+
+.navigation__link::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  color: #ffffff;
 }
 
 .page-footer__copyright-text {
@@ -464,6 +505,10 @@ Main styles
   .back-item {
     flex-grow: 1;
   }
+
+  .page-footer__site-map {
+    width: 65%;
+  }
 }
 
 @media (max-width: 31.25em) {
@@ -471,6 +516,10 @@ Main styles
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .page-footer__site-map {
+    width: 85%;
   }
 }
 
