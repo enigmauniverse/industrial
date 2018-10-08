@@ -181,7 +181,7 @@ Main styles
   left: 0;
   display: block;
   width: 21px;
-  height: 22px;
+  height: 28px;
   padding: 0;
   border: 0;
   background-image: url("../img/search_icon.svg");
@@ -218,8 +218,8 @@ Main styles
 .goods-promo::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 35px;
+  right: 35px;
   display: block;
   width: 112px;
   height: 115px;
@@ -240,6 +240,15 @@ Main styles
 .goods-promo__head,
 .goods-promo__text {
   margin: 0;
+}
+
+.goods-promo__head {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+
+.goods-promo__text {
+  margin-bottom: 105px;
 }
 
 .goods-promo__btn {
@@ -267,16 +276,30 @@ Main styles
 }
 
 .main-item {
+  display: flex;
+  flex-direction: column;
   width: 560px;
   min-height: 520px;
   padding: 30px;
 }
 
+.main-item__text {
+  margin: 0;
+  margin-bottom: 60px;
+  width: 90%;
+}
+
+.main-item__text--first {
+  text-align: right;
+}
+
 .main-item__btn {
+  width: 180px;
   font-size: 0.75em;
 }
 
 .page-content__item-1 {
+  align-items: flex-end;
   background-image: url("../img/beoplay_bg.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -285,6 +308,7 @@ Main styles
 }
 
 .page-content__item-2 {
+  align-items: flex-start;
   background-image: url("../img/leica_bg.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -343,11 +367,10 @@ Main styles
   text-transform: uppercase;
 }
 
-.goods-promo__head {
-  font-size: 2.5em;
-}
-
 .main-item__head {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 35px;
   font-size: 2em;
 }
 
